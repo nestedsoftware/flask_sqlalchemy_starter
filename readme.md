@@ -28,7 +28,7 @@ These instructions may be Ubuntu linux-specific in some places. Python 3.6+ and 
 * _PENDING: run tests: `$ pytest -v`_
 
 
-<h2>SQLAlchemy and alembic</h2>
+<h2>Database setup and migration</h2>
 
 * `$ source env.sh`
 * `$ ./create_db.sh`
