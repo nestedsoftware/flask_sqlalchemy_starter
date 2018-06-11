@@ -25,7 +25,7 @@ These instructions may be Ubuntu linux-specific in some places. Python 3.6+ and 
 * run: `$ source env.sh && FLASK_ENV=development flask run`
   * `http://localhost:5000/` should show json greeting
   * `http://localhost:5000/messages` should show json list of messages
-* run tests: `$ pytest -v`
+* _PENDING: run tests: `$ pytest -v`_
 
 
 <h2>SQLAlchemy and alembic</h2>
