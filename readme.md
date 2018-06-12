@@ -2,7 +2,7 @@
 
 <h2>Overview</h2>
 
-Thid project includes the basic boilerplate required to integrate SQLAlchemy with Flask. Alembic database upgrading is included. The need for the Flask-SQLAlchemy extension has been removed, which means, among other things, that there is no need to use a custom base class for SQLAlchemy declarative models. 
+Thid project includes the basic boilerplate required to integrate SQLAlchemy with Flask. Alembic database upgrading is included. _Removed need for Flask-SQLAlchemy extension_: Among other things, a custom base class for SQLAlchemy declarative models is therefore no long required. 
 
 <h2>Installation</h2>
 
