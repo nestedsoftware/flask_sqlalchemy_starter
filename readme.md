@@ -8,13 +8,14 @@ This project includes the basic boilerplate required to integrate SQLAlchemy wit
 
 These instructions may be Ubuntu linux-specific in some places. Python 3.6+ and pipenv are required.
 
- * create `env.sh` file and add the following environment variables (substitute `username`, `userpassword`, `~/dev/flask_sqlalchemy_starter`, `localhost`, and `dbname` accordingly): 
+ * create `env.sh` file and add the following environment variables (substitute `~/dev/flask_sqlalchemy_starter `, `username`, `userpassword`, `localhost`, and `dbname` accordingly): 
 
  ```bash
+ export PYTHONPATH=~/dev/flask_sqlalchemy_starter 
  export SQLALCHEMY_USERNAME=username
  export SQLALCHEMY_PASSWORD=userpassword
- export PYTHONPATH=~/dev/flask_sqlalchemy_starter 
- export SQLALCHEMY_URL="postgresql://$SQLALCHEMY_USERNAME:$SQLALCHEMY_PASSWORD@localhost/dbname"
+ export SQLALCHEMY_DBNAME=dbname
+export SQLALCHEMY_URL="postgresql://$SQLALCHEMY_USERNAME:$SQLALCHEMY_PASSWORD@localhost/$SQLALCHEMY_DBNAME"
 ```
 > You don't have to use postgresql as the db of course. 
 > * If you wish to use slite in memory, set SQLALCHEMY_URL to `"sqlite:///:memory:"` (see env_test.sh) 
