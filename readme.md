@@ -33,7 +33,7 @@ These instructions may be Ubuntu linux-specific in some places. Python 3.6+ and 
 * `$ source env.sh`
 * `$ ./create_db.sh`
 * `cd flask_sqlalchemy_starter && alembic upgrade head && cd ..`
-* `$ psql -a -f populate_db.sql`
+* `$ psql -a -f populate_db.sql` (pre-populates db with a few rows of data)
 
 <h2>Install postgresql on Ubuntu</h2>
 
