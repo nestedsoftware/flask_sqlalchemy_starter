@@ -19,7 +19,7 @@ These instructions may be Ubuntu linux-specific in some places. Python 3.6+ and 
 export SQLALCHEMY_URL="postgresql://$SQLALCHEMY_USERNAME:$SQLALCHEMY_PASSWORD@$SQLALCHEMY_SERVER/$SQLALCHEMY_DBNAME"
 ```
 > You don't have to use postgresql as the db of course. 
-> * If you wish to use slite in memory, set SQLALCHEMY_URL to `"sqlite:///:memory:"` (see env_test.sh) 
+> * If you wish to use slite in memory, set SQLALCHEMY_URL to `"sqlite://"` (see env_test.sh) 
 > * If you want to use postgresql and it's not installed on your system yet, I've included instructions for postgresql installation on Ubuntu linux at the end of this file.
 
 * install: `$ pipenv install`

@@ -14,14 +14,12 @@ from .models import Message
 
 @pytest.fixture
 def client():
-    client = app.app.test_client()
-    
     Base.metadata.drop_all(engine)
     Base.metadata.create_all(engine)
 
+    client = app.app.test_client()
+
     return client
-
-
 
 def test_hello(client):
     response = client.get('/')
