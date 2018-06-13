@@ -6,12 +6,12 @@ name = "pypi"
 [packages]
 flask = "*"
 sqlalchemy = "*"
-alembic = "*"
 "psycopg2" = "*"
 "psycopg2-binary" = "*"
 
 [dev-packages]
 pytest = "*"
+alembic = "*"
 
 [requires]
 python_version = "3.6"
