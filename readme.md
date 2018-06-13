@@ -16,17 +16,17 @@ These instructions may be Ubuntu linux-specific in some places. Python 3.6+ and 
  export PYTHONPATH=~/dev/flask_sqlalchemy_starter 
  export SQLALCHEMY_URL="postgresql://$SQLALCHEMY_USERNAME:$SQLALCHEMY_PASSWORD@localhost/dbname"
 ```
-
-> You don't have to use postgresql as the db of course. If you want to use postgresql and it's not installed on your system yet, I've included instructions for postgresql installation on Ubuntu linux at the end of this file.
+> You don't have to use postgresql as the db of course. 
+> * If you wish to use slite in memory, set SQLALCHEMY_URL to `"sqlite:///:memory:"` (see env_test.sh) 
+> * If you want to use postgresql and it's not installed on your system yet, I've included instructions for postgresql installation on Ubuntu linux at the end of this file.
 
 * install: `$ pipenv install`
 * install with dev dependencies (unit testing): `$ pipenv install --dev`
 * start python virtual environment: `$ pipenv shell`
-* run: `$ source env.sh && FLASK_ENV=development flask run`
+* run: `$ source env.sh && FLASK_ENV=development flask run` 
   * `http://localhost:5000/` should show json greeting
   * `http://localhost:5000/messages` should show json list of messages
-* _PENDING: run tests: `$ pytest -v`_
-
+* run tests: `$ source env_test.sh` followed by `$ pytest -v`
 
 <h2>Database setup and migration</h2>
 

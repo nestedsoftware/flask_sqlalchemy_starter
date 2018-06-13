@@ -1,4 +1,4 @@
-if psql -lqt | cut -d \| -f 1 | grep -qw TestDB; then
+if psql -lqt | cut -d \| -f 1 | grep -qw $SQLALCHEMY_DBNAME; then
     echo 'db exists'
     # database exists
     # $? is 0

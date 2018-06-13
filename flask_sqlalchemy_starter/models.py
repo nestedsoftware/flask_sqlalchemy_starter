@@ -6,6 +6,7 @@ Base = declarative_base()
 
 class Message(Base):
     __tablename__ = 'messages'
+    
     id = Column(Integer, primary_key=True)
     message = Column(String)
     new_field = Column(String)

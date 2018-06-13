@@ -1,4 +1,6 @@
-\c "TestDB"
+\set dbname `echo "$SQLALCHEMY_DBNAME"`
+
+\c :"dbname"
 
 TRUNCATE TABLE "messages";
 
