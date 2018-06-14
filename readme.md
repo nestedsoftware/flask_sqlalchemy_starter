@@ -22,9 +22,9 @@ export SQLALCHEMY_URL="postgresql://$SQLALCHEMY_USERNAME:$SQLALCHEMY_PASSWORD@$S
 > * If you wish to use slite in memory, set SQLALCHEMY_URL to `"sqlite://"` (see env_test.sh) 
 > * If you want to use postgresql and it's not installed on your system yet, I've included instructions for postgresql installation on Ubuntu linux at the end of this file.
 
+* start python virtual environment: `$ pipenv shell`
 * install: `$ pipenv install`
 * install with dev dependencies (unit testing): `$ pipenv install --dev`
-* start python virtual environment: `$ pipenv shell`
 * run: `$ source env.sh && FLASK_ENV=development flask run` 
   * `http://localhost:5000/` should show json greeting
   * `http://localhost:5000/messages` should show json list of messages
