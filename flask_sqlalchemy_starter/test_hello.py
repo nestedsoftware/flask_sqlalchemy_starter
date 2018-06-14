@@ -30,6 +30,9 @@ def test_messages(client):
     message = Message(message='Hello there!')
 
     Session.add(message)
+
+    # test will pass without commit, but data will not be visible directly
+    # in database
     Session.commit()
 
     response = client.get('/messages')
