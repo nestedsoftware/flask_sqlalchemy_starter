@@ -2,7 +2,7 @@
 
 <h2>Overview</h2>
 
-This project includes the basic boilerplate required to integrate SQLAlchemy with Flask. Alembic database upgrading is included. _Flask-SQLAlchemy extension is not used_: Among other things, a custom base class for SQLAlchemy declarative models is therefore not required. 
+This project includes the basic boilerplate required to integrate SQLAlchemy with Flask. Alembic database upgrading is included. _Flask-SQLAlchemy extension is not used_: Among other things, a custom base class for SQLAlchemy declarative models that creates a dependency on Flask is therefore not required. 
 
 <h2>Installation</h2>
 
