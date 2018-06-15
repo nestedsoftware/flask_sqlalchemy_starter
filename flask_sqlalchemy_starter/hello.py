@@ -17,9 +17,7 @@ def hello():
 def messages():
     values = Session.query(Message).all()
 
-    results = []
-    for value in values:
-        results.append({ 'message': value.message })
+    results = [{ 'message': value.message } for value in values]
 
     return (json.dumps(results), 200, { 'content_type': 'application/json' })
 
