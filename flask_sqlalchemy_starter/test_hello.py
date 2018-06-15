@@ -33,7 +33,7 @@ def test_messages(client):
 
     Session.commit()
 
-    # This makes sure the test won't pass withoiut a Session.commit()
+    # This makes sure the test won't pass without a Session.commit()
     Session.remove()
 
     response = client.get('/messages')
